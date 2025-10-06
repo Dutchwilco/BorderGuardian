@@ -1,0 +1,58 @@
+# BorderGuardian Messages
+prefix: "&8[&cDutchSMP Border&8]&r "
+
+# Command messages
+commands:
+  border-set: "&aWorld border set to &e%radius% &ablocks radius."
+  border-shrinking: "&cBorder is shrinking by &e%amount% &cblocks at &e%rate% &cblocks per second."
+  border-expanding: "&aBorder is expanding by &e%amount% &ablocks at &e%rate% &ablocks per second."
+  shrink-complete: "&aBorder shrinking complete!"
+  expand-complete: "&aBorder expansion complete!"
+  invalid-radius: "&cInvalid radius! Please use a number between 1 and 30000000."
+  invalid-amount: "&cInvalid amount! Please use a positive number."
+  already-animating: "&cBorder is already animating! Please wait for it to complete."
+  no-permission: "&cYou don't have permission to use this command!"
+  center-set: "&aBorder center set to &e%x%, %z%&a."
+  speed-set: "&aBorder animation speed set to &e%speed% &ablocks per second!"
+  invalid-speed: "&cInvalid speed! Speed must be greater than 0."
+  
+  # Info command
+  info:
+    - "&8&m----------&r &cBorder Info &8&m----------"
+    - "&7Current Radius: &e%radius% blocks"
+    - "&7Center: &e%x%, %z%"
+    - "&7World: &e%world%"
+    - "&7Status: &e%status%"
+    - "&8&m------------------------------"
+
+  # Usage messages
+  usage:
+    - "&cUsage: &7/border <command> [value]"
+    - "&c/border <radius> &7- Set border radius"
+    - "&c/border shrink <amount> &7- Shrink border"
+    - "&c/border expand <amount> &7- Expand border"
+    - "&c/border center <x> <z> &7- Set border center"
+    - "&c/border speed <blocks/sec> &7- Set animation speed"
+    - "&c/border info &7- Show border information"
+
+# Action bar messages
+actionbar:
+  shrinking: "&c&lDe border is aan het krimpen..."
+  expanding: "&a&lDe border wordt groter..."
+  warning: "&e⚠ &cJe komt dichtbij de border! &e⚠"
+  danger: "&4☠ &cJe bent buiten de border! &4☠"
+
+# Title messages
+titles:
+  warning:
+    title: "&e⚠ WARNING ⚠"
+    subtitle: "&cApproaching world border!"
+  danger:
+    title: "&4☠ GEVAAR ☠"
+    subtitle: "&cje zit buiten de border!"
+
+# Console messages
+console:
+  plugin-enabled: "BorderGuardian has been enabled!"
+  plugin-disabled: "BorderGuardian has been disabled!"
+  config-reloaded: "Configuration reloaded successfully!"

@@ -1,0 +1,52 @@
+# BorderGuardian Configuration
+# Main border settings
+border:
+  # Default border radius when plugin starts
+  default-radius: 1000
+  # World where border is active (leave empty for all worlds)
+  world: ""
+  # Border center coordinates
+  center:
+    x: 0
+    z: 0
+
+# Animation settings
+animation:
+  # Rate of border shrinking/expanding (blocks per second)
+  shrink-rate: 0.3333
+  expand-rate: 0.3333
+  # Show action bar during animation
+  show-action-bar: true
+  # Update interval for smooth animation (ticks, 20 = 1 second)
+  update-interval: 20
+
+# Damage settings
+damage:
+  # Damage dealt per second when outside border (in half-hearts)
+  damage-amount: 2.0
+  # Damage interval (ticks, 20 = 1 second)
+  damage-interval: 20
+  # Warning distance before taking damage (blocks)
+  warning-distance: 5
+  # Damage type (GENERIC, MAGIC, VOID, etc.)
+  damage-type: "GENERIC"
+
+# Visual effects
+effects:
+  # Show particles at border edge
+  show-particles: false
+  # Particle type
+  particle-type: "FLAME"
+  # Particle density (particles per block)
+  particle-density: 3
+  # Show warning titles when approaching border
+  show-warnings: false
+  # Warning distance for titles
+  warning-title-distance: 3
+
+# Performance settings
+performance:
+  # How often to check player positions (ticks)
+  check-interval: 10
+  # Maximum players to process per check cycle
+  max-players-per-cycle: 30

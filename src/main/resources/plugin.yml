@@ -1,0 +1,21 @@
+name: BorderGuardian
+version: 1.0.0
+main: me.wilcodwg.borderguardian.BorderGuardian
+api-version: 1.20
+author: wilcodwg
+description: A comprehensive world border plugin with customizable damage and visual effects
+
+commands:
+  border:
+    description: Main border management command
+    usage: /border <radius|shrink|expand|info|center> [value]
+    permission: borderguardian.admin
+    aliases: [worldborder, wb]
+
+permissions:
+  borderguardian.admin:
+    description: Access to all border management commands
+    default: op
+  borderguardian.bypass:
+    description: Bypass border damage and restrictions
+    default: false
